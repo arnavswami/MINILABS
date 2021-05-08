@@ -1,0 +1,29 @@
+package com.arnav.minilabs;
+import java.util.*;
+public class LinkedLists {
+
+        public static void main(String args[])
+        {
+            // Creating object of the
+            // class linked list
+            LinkedList<String> ll
+                    = new LinkedList<String>();
+
+            // Adding elements to the linked list
+            ll.add("B");
+            ll.add("F");
+            ll.addLast("G");
+            ll.addFirst("A");
+            ll.add(2, "E");
+
+            System.out.println(ll);
+
+            ll.remove("B");
+            ll.remove(3);
+            ll.removeFirst();
+            ll.removeLast();
+
+            System.out.println(ll);
+        }
+    }
+

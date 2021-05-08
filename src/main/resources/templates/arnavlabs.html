@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance | Arnav</title>
+</head>
+
+<body bgcolor="#20BCE3"></body>
+
+<body>
+<div class="lab">
+    <h1>AP CS A - Inheritance Lab</h1>
+
+    <h3>Try it!</h3>
+    <form th:action="@{inheritance}">
+        <label>Fill inthe blanks! Enter the Restaurant make, model, year, & top speed!</label>
+        <input type="text" th:name="make" th:value="${make}">
+        <input type="text" th:name="model" th:value="${model}">
+        <input type="number" min="1" max="300" th:name="topspeed" th:value="${topspeed}">
+        <input type="submit">
+    </form>
+    <p th:text="${cars}"></p>
+</div>
+</body>
+</html>
